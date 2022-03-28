@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass by Value and reference</title>
+</head>
+
+<body>
+    <h1>Pass By Value</h1>
+    <p>
+        It means that JavaScript copies the values of the variables into the function arguments. Any changes that you
+        make to the arguments inside the function do not reflect the passing variables outside of the function.
+
+        primitive data types;(independent)(pass by value)
+        numbers, string, boolean etc
+    </p>
+    <h1>Pass By reference</h1>
+    <p>
+        In Pass by Reference, a function is called by directly passing the reference/address of the variable as the
+        argument. Changing the argument inside the function affects the variable passed from outside the function
+
+        non-primitive data type;(dependent)(pass by reference)
+        array, object
+    </p>
+    <script>
+        // convert object value into a new array
+       let obj1 = {
+           fName: "abdullah",
+           lName: "ansari",
+           age: "19",
+           rollNo: "007"
+       }
+       let arry1 = Object.values(obj1)
+       console.log(arry1);
+       // convert object keys into a new array
+       let obj2 = {
+           fName: "abdullah",
+           lName: "ansari",
+           age: "19",
+           rollNo: "007"
+       }
+       let arry2 = Object.keys(obj2)
+       console.log(arry2);
+      
+    </script>
+</body>
+
+</html>
